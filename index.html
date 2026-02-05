@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vimarsh Khattar | Portfolio</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Segoe UI", Arial, sans-serif;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-color: #0b0b0b;
+      color: #e5e5e5;
+    }
+
+    /* NAVBAR */
+    nav {
+      position: sticky;
+      top: 0;
+      background: #000;
+      padding: 16px 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #222;
+      z-index: 1000;
+    }
+
+    nav h2 {
+      color: #3b82f6;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 22px;
+    }
+
+    nav a {
+      color: #e5e5e5;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      color: #3b82f6;
+    }
+
+    /* HERO */
+    .hero {
+      text-align: center;
+      padding: 90px 20px;
+      background: radial-gradient(circle at top, #111, #000);
+    }
+
+    .hero h1 {
+      font-size: 44px;
+      margin-bottom: 12px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      color: #b5b5b5;
+    }
+
+    .hero-image img {
+  width: 260px;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+
+    /* SECTIONS */
+    section {
+      padding: 70px 90px;
+    }
+
+    h2 {
+      color: #3b82f6;
+      margin-bottom: 25px;
+      font-size: 30px;
+    }
+
+    /* CARDS */
+    .card {
+      background: #121212;
+      padding: 28px;
+      border-radius: 12px;
+      margin-bottom: 30px;
+      border: 1px solid #1f1f1f;
+    }
+
+    .card p {
+      color: #d1d1d1;
+      line-height: 1.7;
+      font-size: 17px;
+    }
+
+    /* RESUME */
+    .resume-container {
+      background: #0f0f0f;
+      padding: 15px;
+      border-radius: 12px;
+      border: 1px solid #222;
+    }
+
+    .resume-download {
+      margin-top: 15px;
+    }
+
+    .resume-download a {
+      color: #3b82f6;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    /* CONTACT */
+    #contact a {
+      color: #3b82f6;
+      text-decoration: none;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      background: #000;
+      border-top: 1px solid #222;
+      color: #777;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav>
+    <h2>Vimarsh Khattar</h2>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#extracurriculars">Extracurriculars</a></li>
+      <li><a href="#certifications">Certifications</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-container">
+  
+      <div class="hero-text">
+        <h1>Hi, I'm Vimarsh 👋</h1>
+        <p class="subtitle">
+          Computer Science Undergraduate at Stony Brook University
+        </p>
+        <p class="tags">
+          Software Engineering • Data Analytics • Backend Systems
+        </p>
+      </div>
+  
+    </div>
+  </section>
+  
+  
+
+  <!-- ABOUT ME -->
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="card">
+      <p>
+        I’m Vimarsh Khattar, an international Computer Science sophomore at
+        Stony Brook University with a strong interest in software engineering,
+        data analytics, and backend systems. I grew up in New Delhi, India,
+        where my curiosity for technology and problem-solving began.
+      </p>
+      <br />
+      <p>
+        Alongside academics, I have played state-level soccer in India, which
+        has shaped my discipline, teamwork, and resilience. These experiences
+        influence how I approach technical challenges and collaborative
+        projects. I enjoy building efficient, data-driven solutions and continuously
+        exploring new technologies to strengthen my skills and create
+        meaningful real-world impact.
+      </p>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+<section id="education">
+    <h2>Education</h2>
+    <div class="card">
+      <h3>Stony Brook University</h3>
+      <p><strong>B.S. in Computer Science</strong> (2024 – 2028)</p>
+      <p>Coursework: Object-Oriented Programming, Data Structures, Discrete Mathematics</p>
+      <p>Honors: Global Excellence Scholarship, Dean’s List</p>
+    </div>
+  </section>
+  
+  <!-- EXPERIENCE -->
+  <section id="experience">
+    <h2>Experience</h2>
+  
+    <div class="card">
+      <h3>LG CNS India Pvt. Ltd.</h3>
+      <p><em>Software Development Intern</em> | Dec 2022 – Jan 2023</p>
+      <ul>
+        <li>Optimized SQL queries on production datasets, improving performance by 30%+</li>
+        <li>Analyzed enterprise data workflows and networking architecture (OSI model)</li>
+        <li>Produced a database performance tuning report</li>
+      </ul>
+    </div>
+  
+    <div class="card">
+      <h3>Netsoft Consulting Services Pvt. Ltd.</h3>
+      <p><em>Data Analytics Intern</em> | Jun 2023</p>
+      <ul>
+        <li>Processed and analyzed 100K+ tweets using Python</li>
+        <li>Built data cleaning and analytics pipelines</li>
+        <li>Improved Python and SQL performance using optimized algorithms</li>
+      </ul>
+    </div>
+  </section>
+  
+  <!-- EXTRACURRICULARS -->
+  <section id="extracurriculars">
+    <h2>Extracurriculars</h2>
+  
+    <div class="card">
+      <h3>Arch Development Foundation</h3>
+      <p><em>STEM Education Intern</em> | Apr 2021 – Mar 2023</p>
+      <ul>
+        <li>Led STEM initiatives in government-aided schools</li>
+        <li>Designed interactive projects for 200+ students</li>
+        <li>Collaborated with educators to improve engagement</li>
+      </ul>
+    </div>
+  
+    <div class="card">
+      <h3>Project Management Club – Delhi Public School</h3>
+      <p><em>Vice President</em> | Feb 2020 – Mar 2024</p>
+      <ul>
+        <li>Led student teams on multiple project initiatives</li>
+        <li>Tracked tasks, schedules, and progress using Excel</li>
+        <li>Ensured timely project delivery</li>
+      </ul>
+    </div>
+  </section>
+  
+  <!-- CERTIFICATIONS -->
+  <section id="certifications">
+    <h2>Certifications</h2>
+    <div class="card">
+    <ul class="list">
+      <li>Foundations of Data Science – Coursera (2023)</li>
+      <li>Java for Absolute Beginners – Coursera (2023)</li>
+      <li>Data Science: R Basics – Coursera (2023)</li>
+    </ul>
+    <div>
+  </section>
+  
+  <!-- SKILLS -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="card">
+    <div class="skills">
+      <p><strong>Programming:</strong> Python, Java, C, SQL, HTML, CSS, JavaScript</p>
+      <p><strong>Databases:</strong> MySQL, PostgreSQL</p>
+      <p><strong>Tools:</strong> Git, VS Code, Eclipse, IntelliJ</p>
+      <p><strong>Soft Skills:</strong> Leadership, Project Management, Team Collaboration, Dependability</p>
+    </div>
+  </section>
+  
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>📍 Stony Brook, NY</p>
+    <p>📧 <a href="mailto:vimarshkhattar@gmail.com">vimarshkhattar@gmail.com</a></p>
+    <p>🔗 <a href="https://www.linkedin.com/in/vimarsh-khattar-719180381" target="_blank">LinkedIn</a></p>
+  </section>
+
+  <footer>
+    <p>© 2026 Vimarsh Khattar</p>
+  </footer>
+
+</body>
+</html>
